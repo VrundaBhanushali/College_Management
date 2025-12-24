@@ -1,1 +1,19 @@
-<p>table works!</p>
+<table border="1">
+  <tr>
+    <th>Name</th>
+    <th>Address</th>
+    <th>Gender</th>
+    <th>Phone Number</th>
+    <th>Email</th>
+  </tr>
+
+  @for (student of data; track student.email) {
+    <tr>
+      <td>{{ student.name }}</td>
+      <td>{{ student.address }}</td>
+      <td>{{ student.gender }}</td>
+      <td>{{ student.phone }}</td>
+      <td>{{ student.email }}</td>
+    </tr>
+  }
+</table>

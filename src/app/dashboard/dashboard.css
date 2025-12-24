@@ -1,0 +1,55 @@
+/* Center the cards on the page */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap; /* Allows multiple cards to wrap */
+  gap: 20px; /* Space between cards */
+  min-height: 100vh;
+  background-color: #f2f4f8;
+  font-family: "Segoe UI", sans-serif;
+  padding: 40px 20px;
+}
+
+/* Card styling */
+.card {
+  width: 18rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+  background-color: #fff;
+}
+
+/* Card hover effect */
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Card body */
+.card-body {
+  padding: 20px;
+  text-align: center;
+}
+
+/* Card title */
+.card-title {
+  font-size: 1.25rem;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+/* Button */
+.card .btn {
+  width: 100%;
+  font-weight: bold;
+  background-color: #007bff;
+  border: none;
+  transition: background-color 0.3s;
+}
+
+.card .btn:hover {
+  background-color: #0056b3;
+  text-decoration: none;
+}

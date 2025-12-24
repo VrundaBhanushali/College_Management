@@ -1,1 +1,4 @@
-<p>student works!</p>
+<h1>STUDENT RECORDS</h1>
+<app-form (save)="addStudent($event)"></app-form>
+<app-table [data]="students"></app-table>
+<button routerLink="/dashboard">Go to Dashboard</button>
